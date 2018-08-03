@@ -1,0 +1,41 @@
+<!--pages/add/add.wxml-->
+<view class='video-box'>
+  <view bindtap="scrollLeft"><image class='icon' src='../../images/left.png' mode='widthFit'></image></view>
+  <view class="box" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend"
+  >
+  <!-- <block wx:for="{{clubs}}">
+     <view class="club" animation="{{item.animation}}" style='z-index:{{item.zindex}};'>
+      <image src="{{item.image}}"/>
+      <text>item.name}}</text>
+    </view>
+  </block> -->
+  <block>
+     <view class="club" animation="{{animation1}}" style='z-index:{{zindex[0]}};opacity:{{opacities[0]}};'>
+      <image src="{{container[0].image}}"/>
+      <text>{{container[0].name}}</text>
+    </view>
+    <view class="club" animation="{{animation2}}" style='z-index:{{zindex[1]}};opacity:{{opacities[1]}};'>
+      <image src="{{container[1].image}}"/>
+      <text>{{container[1].name}}</text>
+    </view>
+    <view class="club" animation="{{animation3}}" style='z-index:{{zindex[2]}};opacity:{{opacities[2]}};'>
+      <image src="{{container[2].image}}"/>
+      <text>{{container[2].name}}</text>
+    </view>
+    <view class="club" animation="{{animation4}}" style='z-index:{{zindex[3]}};opacity:{{opacities[3]}};'>
+      <image src="{{container[3].image}}"/>
+      <text>{{container[3].name}}</text>
+    </view>
+    <view class="club" animation="{{animation5}}" style='z-index:{{zindex[4]}};opacity:{{opacities[4]}};'>
+      <image src="{{container[4].image}}"/>
+      <text>{{container[4].name}}</text>
+    </view>
+  </block>
+  </view>
+  <view bindtap="scrollRight"><image class='icon' src='../../images/right.png'></image></view>
+</view>
+
+<view class="container">
+  <view animation="{{animation}}" class="view">我在做动画</view>
+</view>
+<button type="primary" bindtap="translate">旋转</button>

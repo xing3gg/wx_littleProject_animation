@@ -1,0 +1,56 @@
+.video-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+}
+
+.icon {
+  width:24px;
+  height:24px;
+}
+
+.box {
+  width: 90%;
+  z-index: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.box .club {
+  width: 335rpx;
+  position: relative;
+}
+
+.club image {
+  height: 370rpx;
+  width: 335rpx;
+}
+
+.club text {
+  display: block;
+  width: 100%;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+
+.box .club:nth-child(1) {
+  transform-origin: center center;
+
+}
+
+.box .club:nth-child(2) {
+  transform-origin: center center;
+
+}
+
+.box .club:nth-child(3) {
+  transform-origin: center center;
+
+}
+
+.box .club:nth-child(1) text, .box .club:nth-child(3) text {
+  
+}
